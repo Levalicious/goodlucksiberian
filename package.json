@@ -27,7 +27,7 @@
   },
   "devDependencies": {
     "@playwright/test": "^1.42.0",
-    "@remix-run/dev": "^2.7.2",
+    "@remix-run/dev": "^2.8.1",
     "@remix-run/testing": "^2.7.2",
     "@testing-library/react": "^14.2.1",
     "@types/jest": "^29.5.12",
