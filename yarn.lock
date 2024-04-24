@@ -836,14 +836,14 @@
     tsconfig-paths "^4.0.0"
     ws "^7.4.5"
 
-"@remix-run/express@2.7.2":
-  version "2.7.2"
-  resolved "https://registry.yarnpkg.com/@remix-run/express/-/express-2.7.2.tgz#a8d5c3d6131fa7919be2a2f5abc98fadcb2813ad"
-  integrity sha512-wknBXniMr7sUvu0D+iOkxK1IenSM0nfZJai1RgNP0Qs12jrKQA5I1dZuiJdKFfLnhvJLbl/BJ6q40TJ4kqNTPg==
+"@remix-run/express@2.9.0":
+  version "2.9.0"
+  resolved "https://registry.yarnpkg.com/@remix-run/express/-/express-2.9.0.tgz#eb0e776c3db67cc3384ab2ea3ef308da5dd5e3e2"
+  integrity sha512-T/ZZ9mkvOnsbxZRtAEnea5TB81/0wb1cVC9WPjbPa+8T7DdfOUMSOkOCW5vGY3OjnEl0Mir5nIBlpaB1WFjY/g==
   dependencies:
-    "@remix-run/node" "2.7.2"
+    "@remix-run/node" "2.9.0"
 
-"@remix-run/node@2.7.2", "@remix-run/node@^2.7.2":
+"@remix-run/node@2.7.2":
   version "2.7.2"
   resolved "https://registry.yarnpkg.com/@remix-run/node/-/node-2.7.2.tgz#5efbc3c2015d0d36fea265afa9be413eb35e2c32"
   integrity sha512-smIWI9kNGDnY361WlDOTwxPfUw/KHcS7PCLjHlM/omx3ETD1Y2dc4Rt82LSJt0qsPSPA72ZOww08NoX+YGBvyQ==
@@ -856,6 +856,19 @@
     cookie-signature "^1.1.0"
     source-map-support "^0.5.21"
     stream-slice "^0.1.2"
+
+"@remix-run/node@2.9.0", "@remix-run/node@^2.7.2":
+  version "2.9.0"
+  resolved "https://registry.yarnpkg.com/@remix-run/node/-/node-2.9.0.tgz#532f5c5ab2545111664ebf9c6d3e16f321e8ff60"
+  integrity sha512-S78ZUtU8fjUyJZ+kDpamply4Ym6+N0lJBBJQ5y0tRmx6TOT6j4UVI4rVis4Qe+c0QE5u78oFCPqFavQ153jMWA==
+  dependencies:
+    "@remix-run/server-runtime" "2.9.0"
+    "@remix-run/web-fetch" "^4.4.2"
+    "@web3-storage/multipart-parser" "^1.0.0"
+    cookie-signature "^1.1.0"
+    source-map-support "^0.5.21"
+    stream-slice "^0.1.2"
+    undici "^6.10.1"
 
 "@remix-run/react@2.7.2", "@remix-run/react@^2.7.2":
   version "2.7.2"
@@ -872,13 +885,18 @@
   resolved "https://registry.yarnpkg.com/@remix-run/router/-/router-1.15.1.tgz#221fd31a65186b9bc027b74573485fb3226dff7f"
   integrity sha512-zcU0gM3z+3iqj8UX45AmWY810l3oUmXM7uH4dt5xtzvMhRtYVhKGOmgOd1877dOPPepfCjUv57w+syamWIYe7w==
 
-"@remix-run/serve@^2.7.2":
-  version "2.7.2"
-  resolved "https://registry.yarnpkg.com/@remix-run/serve/-/serve-2.7.2.tgz#7e40e5cf87994bb6cd60156f9ad8b56e5d9b51eb"
-  integrity sha512-5kR6fuD2MEWqd8DogyHP3fiSjGv56ZBWKntwMeEKh7kuyDhHPX+BAU2UsYvLOTB1VH9Ktg5mNM8l9gMMY6l/Jg==
+"@remix-run/router@1.16.0":
+  version "1.16.0"
+  resolved "https://registry.yarnpkg.com/@remix-run/router/-/router-1.16.0.tgz#0e10181e5fec1434eb071a9bc4bdaac843f16dcc"
+  integrity sha512-Quz1KOffeEf/zwkCBM3kBtH4ZoZ+pT3xIXBG4PPW/XFtDP7EGhtTiC2+gpL9GnR7+Qdet5Oa6cYSvwKYg6kN9Q==
+
+"@remix-run/serve@^2.9.0":
+  version "2.9.0"
+  resolved "https://registry.yarnpkg.com/@remix-run/serve/-/serve-2.9.0.tgz#0e8abb570f54d8ff516fd764382afa67675afff6"
+  integrity sha512-S5gWp+Jb3JLA1tavvppKrf9ouCGFknFEngOR6/qTYEJQvAPtx/0I0CbX3swK4/a8taeL5oIzFPwDezQPmHhAaA==
   dependencies:
-    "@remix-run/express" "2.7.2"
-    "@remix-run/node" "2.7.2"
+    "@remix-run/express" "2.9.0"
+    "@remix-run/node" "2.9.0"
     chokidar "^3.5.3"
     compression "^1.7.4"
     express "^4.17.1"
@@ -897,6 +915,19 @@
     cookie "^0.6.0"
     set-cookie-parser "^2.4.8"
     source-map "^0.7.3"
+
+"@remix-run/server-runtime@2.9.0":
+  version "2.9.0"
+  resolved "https://registry.yarnpkg.com/@remix-run/server-runtime/-/server-runtime-2.9.0.tgz#49a54d47a3ae91b331c5a8a17c4bf9a51839a006"
+  integrity sha512-HkQFwyfOUF6dTd76ZXMC07b+3sWVpuIYsEPfkb2LytqIskEdaAZYEiUr1zUUCvBSTQmI38dJt9O2C3GEUAghcA==
+  dependencies:
+    "@remix-run/router" "1.16.0"
+    "@types/cookie" "^0.6.0"
+    "@web3-storage/multipart-parser" "^1.0.0"
+    cookie "^0.6.0"
+    set-cookie-parser "^2.4.8"
+    source-map "^0.7.3"
+    turbo-stream "^2.0.0"
 
 "@remix-run/testing@^2.7.2":
   version "2.7.2"
@@ -6067,8 +6098,16 @@ string-hash@^1.1.1:
   resolved "https://registry.yarnpkg.com/string-hash/-/string-hash-1.1.3.tgz#e8aafc0ac1855b4666929ed7dd1275df5d6c811b"
   integrity sha512-kJUvRUFK49aub+a7T1nNE66EJbZBMnBgoC1UbCZ5n6bsZKBRga4KgBRTMn/pFkeCZSYtNeSyMxPDM0AXWELk2A==
 
-"string-width-cjs@npm:string-width@^4.2.0", string-width@^4.1.0:
-  name string-width-cjs
+"string-width-cjs@npm:string-width@^4.2.0":
+  version "4.2.3"
+  resolved "https://registry.yarnpkg.com/string-width/-/string-width-4.2.3.tgz#269c7117d27b05ad2e536830a8ec895ef9c6d010"
+  integrity sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==
+  dependencies:
+    emoji-regex "^8.0.0"
+    is-fullwidth-code-point "^3.0.0"
+    strip-ansi "^6.0.1"
+
+string-width@^4.1.0:
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/string-width/-/string-width-4.2.3.tgz#269c7117d27b05ad2e536830a8ec895ef9c6d010"
   integrity sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==
@@ -6159,7 +6198,14 @@ stringify-entities@^4.0.0:
     character-entities-html4 "^2.0.0"
     character-entities-legacy "^3.0.0"
 
-"strip-ansi-cjs@npm:strip-ansi@^6.0.1", strip-ansi@^6.0.0, strip-ansi@^6.0.1:
+"strip-ansi-cjs@npm:strip-ansi@^6.0.1":
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/strip-ansi/-/strip-ansi-6.0.1.tgz#9e26c63d30f53443e9489495b2105d37b67a85d9"
+  integrity sha512-Y38VPSHcqkFrCpFnQ9vuSXmquuv5oXOKpGeT6aGrr3o3Gc9AlVa6JBfUSOCnbxGGZF+/0ooI7KrPuUSztUdU5A==
+  dependencies:
+    ansi-regex "^5.0.1"
+
+strip-ansi@^6.0.0, strip-ansi@^6.0.1:
   version "6.0.1"
   resolved "https://registry.yarnpkg.com/strip-ansi/-/strip-ansi-6.0.1.tgz#9e26c63d30f53443e9489495b2105d37b67a85d9"
   integrity sha512-Y38VPSHcqkFrCpFnQ9vuSXmquuv5oXOKpGeT6aGrr3o3Gc9AlVa6JBfUSOCnbxGGZF+/0ooI7KrPuUSztUdU5A==
@@ -6379,6 +6425,11 @@ tsconfig-paths@^4.0.0:
     minimist "^1.2.6"
     strip-bom "^3.0.0"
 
+turbo-stream@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/turbo-stream/-/turbo-stream-2.0.0.tgz#e8bc7d30799e2dee654de66e319760f8b462716a"
+  integrity sha512-h0dfgRJAoiEh2hdFCoEuOSApsUfnw87gmNuziVS/mYycuBSCTeqpdanypMlHci6CvZibF7b9kvSpbeC7/r2/KA==
+
 type-check@^0.4.0, type-check@~0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/type-check/-/type-check-0.4.0.tgz#07b8203bfa7056c0657050e3ccd2c37730bab8f1"
@@ -6472,6 +6523,11 @@ undici-types@~5.26.4:
   version "5.26.5"
   resolved "https://registry.yarnpkg.com/undici-types/-/undici-types-5.26.5.tgz#bcd539893d00b56e964fd2657a4866b221a65617"
   integrity sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==
+
+undici@^6.10.1:
+  version "6.14.1"
+  resolved "https://registry.yarnpkg.com/undici/-/undici-6.14.1.tgz#e3c9ce906c2e7dddd0d006d7c91a7d8aa1f2890a"
+  integrity sha512-mAel3i4BsYhkeVPXeIPXVGPJKeBzqCieZYoFsbWfUzd68JmHByhc1Plit5WlylxXFaGpgkZB8mExlxnt+Q1p7A==
 
 unified@^10.0.0:
   version "10.1.2"
